@@ -12,8 +12,16 @@
 <body>
     <header class="header" ><!--montado unicamente em HTML como solicitado-->
             <h1>Lucas paixão - SI UFF</h1>
-            <nav>
-                <a href="index.html"> PÁGINA PRINCIPAL</a>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox"/>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <a href="lucaspaixao.html"> Home</a>
+                        </ul>
+                </div>
             </nav>
     </header>
     <main >
@@ -31,39 +39,50 @@
                 </p>
             </div>
         </section>
-        <section>
+        <section class="align-main">
             <div>
                 <h2>Principais hobbies</h2>
-                <ul>
-                    <li>Estudar inglês e me aprofundar na lingua, gosto de conversar e praticar</li>
-                    <li>jogar Hell let loose, melhor jogo de guerra da atualidade!!</li>
-                    <li>ler ficção científica, O universo numa casca de noz - stephen hawking</li>
-                    <li>gosto de catalogar melhores filmes vistos até então em ordem de precedência</li>
-                    <li>Estudar sobre programação</li>
-                </ul>
+                <div class="align-main-elements-1">
+                    <div>estudar</div>
+                    <div>ler </div>
+                    <div>games</div>
+                    <div>correr</div>
+                    <div>meditar</div>
+                </div>
             </div>
             <div>
                 <h2>Melhores filmes</h2>
-                    <ol>
-                        <li>interestellar - Christopher Nolan</li>
-                        <li>por lugares incriveis - Brett Haley</li>
-                        <li>como eu era antes de você - thea Sharrock</li>
-                        <li>não, não olhe - jordan peele</li>
-                        <li>corra - jordan peele</li>
-                    </ol>
+                <div class="align-main-elements">
+                    <div>interestelar</div>
+                    <div>corra</div>
+                    <div>nao olhe</div>
+                    <div>polar</div>
+                    <div>jules</div>
+                </div>
             </div>
         </section>
         <section>
-            <div>
+            <h2>FeedBack</h2>
+            <div class="forms">
                 <form>
-                    <input type="text" placeholder="Nome Completo" required><br>
-                    <textarea placeholder="Feedback" rows="5" cols="24" required></textarea><br>
-                    <button type="submit">Enviar</button><br>
+                    <textarea placeholder="De um feedback para esse desenvolvedor" required></textarea><br>
+                    <input type="text" placeholder="Nome Completo"required><br>
+                    <div>
+                        <button type="submit">Enviar</button><br>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
     <footer class="footer">
+        <div>
+            <a href="https://instagram.com" alt="instagram">
+                <img src="midia/instagram.png">
+            </a>
+            <a href="https://about.gitlab.com/" alt="gitlab"><img src="midia/gitlab.png">
+            </a>
+            <a href="https://www.linkedin.com" alt="linkegin"><img src="midia/linkedin.png"></a>
+        </div>
         <nav>
             <a href="contatolucasPaixao.html">Entrar em contato</a></p>
         </nav>
